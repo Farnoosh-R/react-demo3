@@ -33,37 +33,43 @@ const Footer = () => {
           <div className="flex flex-col items-center gap-5">
             <h4 className="text-[var(--brand-primary)]">محصولات</h4>
             <Link to="#" className="hover:text-[var(--brand-muted)]">
-             مبلمان
+              مبلمان
             </Link>
             <Link to="#" className="hover:text-[var(--brand-muted)]">
-             سرویس خواب
+              سرویس خواب
             </Link>
             <Link to="#" className="hover:text-[var(--brand-muted)]">
-             سرویس اداری
+              سرویس اداری
             </Link>
           </div>
           <div className="flex flex-col items-center gap-5">
             <h4 className="text-[var(--brand-primary)]">ما را دنبال کنید</h4>
             <Link to="#" className="hover:text-[var(--brand-muted)]">
-             <div className="flex items-center gap-2">
+              <div className="flex items-center gap-2">
                 <div>Facebook</div>
-                <FaFacebook size={20}/>
-             </div>
-
+                <FaFacebook size={20} />
+              </div>
             </Link>
             <Link to="#" className="hover:text-[var(--brand-muted)]">
-                <div className="flex items-center gap-2">
+              <div className="flex items-center gap-2">
                 <div>Instagram</div>
-                <FaInstagram size={20}/>
-                
-             </div>
+                <FaInstagram size={20} />
+              </div>
             </Link>
             <Link to="#" className="hover:text-[var(--brand-muted)]">
-                  <div className="flex items-center gap-2">
+              <div className="flex items-center gap-2">
                 <div>Linked in</div>
-                <FaLinkedin size={20}/>
-             </div>
+                <FaLinkedin size={20} />
+              </div>
             </Link>
+          </div>
+        </div>
+        <div className="flex justify-center gap-1 mt-20">
+          <div className="text-[var(--brand-primary)]">Farnoosh</div>
+          <div className="flex gap-1 text-[var(--brand-muted)]">
+            <div>Designed & Developed by</div>
+          <div>|</div>
+          <div>2026©</div>
           </div>
         </div>
       </div>
