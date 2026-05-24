@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { Route, Routes } from 'react-router-dom';
 import Navbar from './components/layout/navbar/Navbar';
 import Home from './pages/home';
+import Footer from './components/layout/footer';
 
 export function useScrollAnimation() {
   useEffect(() => {
@@ -35,6 +36,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />}/>
       </Routes>
+      <Footer />
     </>
   )
 }

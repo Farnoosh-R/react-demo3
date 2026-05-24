@@ -23,10 +23,10 @@ const Hero = () => {
           </div>
           <div className="relative flex justify-between p-5 items-center gap-7">
             <div className="absolute backdrop-blur-xs border border-white bg-white/10 top-0 left-0 w-full h-full rounded-[50px]"></div>
-            <a className="bg-[var(--brand-primary)] rounded-full p-3 z-10">
+            <a className="bg-[var(--brand-primary)] hover:bg-amber-600 rounded-full p-3 z-10">
               <FaPhone color="white" size={20} />
             </a>
-            <div className="text-white text-xl tracking-[10px] z-10">12345678 - 021</div>
+            <h5 className="text-white  tracking-[10px] z-10">12345678 - 021</h5>
           </div>
           <div className="relative w-full h-[200px]">
             <BlurCircle style={{left: "-10%", top: "200px"}}/>

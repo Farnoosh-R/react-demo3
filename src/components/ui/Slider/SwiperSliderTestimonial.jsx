@@ -8,7 +8,7 @@ import Button from "../Button/Button";
 import { useRef } from "react";
 import { HiArrowLongRight, HiArrowLongLeft } from "react-icons/hi2";
 
-export default function SwiperSlider({ items }) {
+export default function SwiperSliderTestimonial({ items }) {
   const paginationRef = useRef(null);
 
   return (
@@ -19,7 +19,7 @@ export default function SwiperSlider({ items }) {
       flex
       justify-center
       items-center
-      left-4
+      -left-7
       top-1/2
       -translate-y-1/2
       z-10
@@ -33,7 +33,7 @@ export default function SwiperSlider({ items }) {
       text-[var(--text-primary)]
       backdrop-blur"
       >
-        <HiArrowLongLeft size={25}/>
+        <HiArrowLongLeft size={25} />
       </button>
       <Swiper
         slidesPerView={1}
@@ -49,7 +49,7 @@ export default function SwiperSlider({ items }) {
           prevEl: ".custom-prev",
           nextEl: ".custom-next",
         }}
-        spaceBetween={20}
+        spaceBetween={50}
         breakpoints={{
           320: {
             slidesPerView: 1,
@@ -58,7 +58,7 @@ export default function SwiperSlider({ items }) {
             slidesPerView: 2,
           },
           1024: {
-            slidesPerView: 4,
+            slidesPerView: 3,
           },
         }}
         className="relative h-full pb-16"
@@ -67,28 +67,34 @@ export default function SwiperSlider({ items }) {
           <SwiperSlide key={item.id}>
             <div className="relative h-auto">
               <div className="flex flex-col gap-4">
-                <div className="h-[300px]">
-                  <img
-                    src={item.image}
-                    alt={item.title}
-                    className="w-fit object-cover mx-auto"
-                  />
-                </div>
-                <div className="flex flex-col bg-white rounded-bl-2xl rounded-br-2xl p-5">
-                  <div className="text-[var(--text-secondary)]">{item.cat}</div>
-                  <h5>{item.title}</h5>
-                  <div className="flex">
-                    <FaStar className="text-amber-400" />
-                    <FaStar className="text-amber-400" />
-                    <FaStar className="text-amber-400" />
-                    <FaStar className="text-amber-400" />
-                    <FaStar className="text-amber-400" />
-                  </div>
-                  <div className="flex justify-between mt-7 items-center">
-                    <div className="font-bold">{item.price}</div>
-                    <Button variant="primary" type="outline">
-                      تماس جهت سفارش
-                    </Button>
+                <div className="h-[600px]">
+                  <div
+                    className="flex justify-center p-5 h-full bg-cover bg-center rounded-3xl"
+                    style={{ backgroundImage: `url(${item.image})` }}
+                  >
+                    <div className="relative bg-white h-64 w-full rounded-3xl translate-y-75 shadow-2xl">
+                      <div className="absolute -top-10 left-1/2 -translate-x-1/2 w-17 h-13 bg-white rounded-t-full pt-2">
+                        <img
+                          src={item.tinyImage}
+                          className="w-fit object-cover mx-auto shadow-2xl rounded-full"
+                          alt=""
+                        />
+                      </div>
+                      <div className="flex flex-col justify-center items-center gap-4 p-12 text-center">
+                        <div>
+                          <h3>{item.productName}</h3>
+                          <div className="text-[var(--text-secondary)]">{item.customerName}</div>
+                        </div>
+                        <div className="leading-7">{item.des}</div>
+                        <div className="flex gap-3">
+                          <FaStar className="text-amber-400" />
+                          <FaStar className="text-amber-400" />
+                          <FaStar className="text-amber-400" />
+                          <FaStar className="text-amber-400" />
+                          <FaStar className="text-amber-400" />
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -102,7 +108,7 @@ export default function SwiperSlider({ items }) {
       flex
       justify-center
       items-center
-      right-0
+      -right-7
       top-1/2
       -translate-y-1/2
       z-10
@@ -116,7 +122,7 @@ export default function SwiperSlider({ items }) {
       text-[var(--text-primary)]
       backdrop-blur"
       >
-        <HiArrowLongRight size={25}/>
+        <HiArrowLongRight size={25} />
       </button>
       <div ref={paginationRef} className="flex justify-center mt-6 gap-2" />
     </div>

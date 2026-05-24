@@ -50,7 +50,7 @@
     /* Brand / Primary */
     --brand-primary: #e58411;
     --brand-secondary: #00d6c9;
-    --brand-accent: #232529;
+    --brand-accent: #0D1B39;
     --brand-surface: #f7f7f7;
     --brand-muted: #7c7c7c;
     /* --brand-glow: #d5aee4;
@@ -106,6 +106,11 @@
       font-size: 14px;
     } */
   }
+  html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
   html {
     direction: rtl;
     overflow-x: hidden !important;
@@ -132,7 +137,7 @@
   }
 
   h2 {
-    @apply text-2xl md:text-4xl lg:text-[2.25rem] leading-[1.3] font-bold;
+    @apply text-2xl md:text-4xl lg:text-[2.25rem] leading-[1.5] font-bold;
   }
 
   h3 {

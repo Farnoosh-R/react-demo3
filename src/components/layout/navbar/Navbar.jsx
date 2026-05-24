@@ -120,7 +120,7 @@ const Navbar = () => {
     top-full left-0
     w-full lg:w-auto
     transition-all duration-300
-    bg-[var(--brand-accent)] lg:bg-transparent
+    bg-[var(--text-primary)] lg:bg-transparent
     lg:opacity-100 lg:visible lg:pointer-events-auto
 
     ${mobileOpen ? "opacity-100 visible pointer-events-auto" : "opacity-0 invisible pointer-events-none"}
@@ -147,7 +147,7 @@ const Navbar = () => {
           onClick={() => setMobileOpen(!mobileOpen)}
           className="lg:hidden text-2xl"
         >
-          <GiHamburgerMenu />
+          <GiHamburgerMenu color="white"/>
         </button>
       </div>
     </nav>

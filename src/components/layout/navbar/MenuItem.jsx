@@ -40,9 +40,9 @@ const MenuItem = ({ item, depth = 0 }) => {
 
               ${open ? "block" : "hidden"}
 
-              bg-[var(--brand-accent)]
+              bg-[var(--text-primary)]
               border
-              border-[var(--brand-surface)]
+              border-[var(--text-secondary)]
               shadow-xl
               rounded-xl
               min-w-[220px]
