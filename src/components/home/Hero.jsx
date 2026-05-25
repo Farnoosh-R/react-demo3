@@ -13,15 +13,15 @@ const Hero = () => {
       <div className="app-container mt-30">
         <div className="flex flex-col gap-7 items-center text-center">
             
-          <div className="text-white">
+          <div className="text-white scroll-anim" style={{ "--from": "translateX(100px)" }}>
             <h1>فضای داخلی خود را زیباتر کنید</h1>
             <h1>مینیمال و مدرن</h1>
           </div>
-          <div className="text-[var(--text-secondary)]">
+          <div className="text-[var(--text-secondary)] scroll-anim" style={{ "--from": "translateX(-100px)" }}>
             <h5>طراحی فضاهایی فراتر از زیبایی،</h5>
             <h5>برای زندگی کردن، آرامش داشتن و ساختن لحظه‌های ماندگار</h5>
           </div>
-          <div className="relative flex justify-between p-5 items-center gap-7">
+          <div className="relative flex justify-between p-5 items-center gap-7 scroll-anim" style={{ "--from": "translatey(100px)" }}>
             <div className="absolute backdrop-blur-xs border border-white bg-white/10 top-0 left-0 w-full h-full rounded-[50px]"></div>
             <a className="bg-[var(--brand-primary)] hover:bg-amber-600 rounded-full p-3 z-10">
               <FaPhone color="white" size={20} />

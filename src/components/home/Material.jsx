@@ -10,7 +10,7 @@ const Material = () => {
     <section id="material" className="relative">
       <div className="app-container">
         <div className="grid grid-cols-1 gap-7 lg:grid-cols-2 place-items-center items-center">
-          <div className="flex flex-col gap-7 mt-20">
+          <div className="flex flex-col gap-7 mt-20 scroll-anim" style={{ "--from": "translateX(100px)" }}>
             <div>
               <div className="text-[var(--brand-primary)]">مواد اولیه</div>
               <h2>ترکیبی از سادگی،</h2>

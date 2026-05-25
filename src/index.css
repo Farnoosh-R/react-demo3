@@ -51,9 +51,11 @@
     --brand-primary: #e58411;
     --brand-secondary: #00d6c9;
     --brand-accent: #0D1B39;
+    --brand-deep: #25272e;
     --brand-surface: #f7f7f7;
     --brand-muted: #7c7c7c;
-    /* --brand-glow: #d5aee4;
+    --brand-glow: #9daea4;
+    /*
     --brand-glow-light: #f9f7ff;
     --brand-sky: #59b1e6;
     --brand-sky-light: #f1faff;
@@ -122,6 +124,7 @@
     color: var(--text-primary);
     font-size: 14px;
     overflow-x: hidden !important;
+    text-align: justify;
   }
   #root {
     /* width: 1400px; */
@@ -133,7 +136,7 @@
     box-sizing: border-box;
   }
   h1 {
-    @apply text-3xl md:text-5xl lg:text-[5rem] leading-[1.5] font-bold;
+    @apply text-3xl md:text-5xl lg:text-[4rem] leading-[1.5] font-bold;
   }
 
   h2 {

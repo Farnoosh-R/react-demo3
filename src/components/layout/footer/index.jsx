@@ -5,10 +5,10 @@ import { FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <section id="footer" className="bg-[var(--brand-surface)] p-20 md:mt-40">
+    <section id="footer" className="bg-[var(--brand-surface)] p-5 lg:p-20 md:mt-40">
       <div className="app-container">
-        <div className="grid grid-cols-2 md:grid-cols-[2fr_1fr_1fr_1fr] gap-9 justify-center">
-          <div className="flex flex-col gap-3">
+        <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr_1fr_1fr] gap-9 justify-center">
+          <div className="flex flex-col gap-3 lg:w-10/12 text-justify">
             <h3 className="text-[var(--brand-accent)]">PANTO</h3>
             <div className="leading-8">
               مزیت همکاری با ما، دریافت خدماتی حرفه‌ای، راحت و قابل اعتماد در
@@ -18,7 +18,7 @@ const Footer = () => {
               و اطمینان بیشتری انجام شود.
             </div>
           </div>
-          <div className="flex flex-col items-center gap-5">
+          <div className="flex flex-col gap-5">
             <h4 className="text-[var(--brand-primary)]">خدمات</h4>
             <Link to="#" className="hover:text-[var(--brand-muted)]">
               طراحی داخلی
@@ -30,7 +30,7 @@ const Footer = () => {
               مشاوره و پشتیبانی
             </Link>
           </div>
-          <div className="flex flex-col items-center gap-5">
+          <div className="flex flex-col gap-5">
             <h4 className="text-[var(--brand-primary)]">محصولات</h4>
             <Link to="#" className="hover:text-[var(--brand-muted)]">
               مبلمان
@@ -42,7 +42,7 @@ const Footer = () => {
               سرویس اداری
             </Link>
           </div>
-          <div className="flex flex-col items-center gap-5">
+          <div className="flex flex-col gap-5">
             <h4 className="text-[var(--brand-primary)]">ما را دنبال کنید</h4>
             <Link to="#" className="hover:text-[var(--brand-muted)]">
               <div className="flex items-center gap-2">

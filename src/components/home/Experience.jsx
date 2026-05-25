@@ -14,7 +14,7 @@ const Experience = () => {
             <div className="hidden 2xl:block absolute right-125 -top-5 w-90 h-90 border border-[var(--brand-secondary)] rounded-tl-2xl rounded-bl-2xl z-10"></div>
             <img src={experience} className="relative xl:absolute right-0 top-5 -scale-x-100 shadow-[0_25px_50px_-10px_rgba(154,79,0,0.41)] mb-10" alt="" />
           </div>
-          <div className="flex flex-col gap-7">
+          <div className="flex flex-col gap-7 scroll-anim" style={{ "--from": "translateX(-100px)" }}>
             <div>
               <div className="text-[var(--brand-primary)]">تجربه آرامش</div>
               <h2>تجربه‌ای متفاوت و حرفه‌ای</h2>

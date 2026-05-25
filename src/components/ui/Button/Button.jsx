@@ -10,7 +10,7 @@ const Button = ({ children, variant = "primary", to, type }) => {
 
     secondary: "bg-gray-200 text-black",
 
-    pastel: "bg-gradient-to-r from-[#FF946D] to-[#FF7D68] text-white px-6 py-4",
+    pastel: "bg-gradient-to-r from-[#f09f49] to-[#e58411] text-lg text-white px-6 py-4 shadow-2xl",
     accent: "bg-[var(--brand-accent)] text-white shadow-lg shadow-orange-300/50"
   };
 

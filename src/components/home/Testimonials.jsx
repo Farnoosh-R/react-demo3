@@ -46,7 +46,7 @@ const Testimonials = () => {
   return (
     <section id="testimonials">
       <div className="app-container">
-        <div className="flex flex-col justify-center items-center gap-20">
+        <div className="flex flex-col justify-center items-center gap-20 scroll-anim" style={{ "--from": "scale(0.9)" }}>
           <div className="text-center">
             <div className="text-[var(--brand-primary)]">بازخورد</div>
             <h2>نظر برخی از مشتریان</h2>

@@ -2,9 +2,8 @@ import { useEffect, useState } from "react";
 import { FaPhone } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 import MenuItem from "./MenuItem.jsx";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import Button from "../../ui/Button/Button.jsx";
-// import logo from "../../../../src/assets/images/logo.png";
 
 const menuData = [
   {
@@ -88,6 +87,10 @@ const menuData = [
 const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const location = useLocation();
+
+  const isHomePage = location.pathname === "/";
+
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
@@ -103,7 +106,7 @@ const Navbar = () => {
   return (
     <nav
       className={`fixed top-0 left-0 w-full z-50 flex items-center justify-between h-[80px] transition-all duration-300 ${
-        scrolled ? "bg-black/50 backdrop-blur-md shadow-lg" : "bg-transparent"
+        scrolled ? "bg-black/50 backdrop-blur-md shadow-lg" : isHomePage ? "bg-transparent" : "bg-[var(--brand-deep)]"
       }`}
     >
       {/* Right Side */}
@@ -120,7 +123,7 @@ const Navbar = () => {
     top-full left-0
     w-full lg:w-auto
     transition-all duration-300
-    bg-[var(--text-primary)] lg:bg-transparent
+    bg-[var(--brand-deep)] lg:bg-transparent
     lg:opacity-100 lg:visible lg:pointer-events-auto
 
     ${mobileOpen ? "opacity-100 visible pointer-events-auto" : "opacity-0 invisible pointer-events-none"}
@@ -147,7 +150,7 @@ const Navbar = () => {
           onClick={() => setMobileOpen(!mobileOpen)}
           className="lg:hidden text-2xl"
         >
-          <GiHamburgerMenu color="white"/>
+          <GiHamburgerMenu color="white" />
         </button>
       </div>
     </nav>

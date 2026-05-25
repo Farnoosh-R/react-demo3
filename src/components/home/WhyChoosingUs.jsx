@@ -8,9 +8,12 @@ const WhyChoosingUs = () => {
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-10 leading-9 items-center">
            <div className="flex flex-col gap-3">
              <h2>چرا مشتریان</h2>
-            <h2>ما را انتخاب می کنند</h2>
+            <div className="flex">
+              <h2>ما را انتخاب می کنند</h2>
+            <span className="text-5xl text-[var(--brand-primary)]">...</span>
+            </div>
            </div>
-          <div className="flex flex-col gap-3">
+          <div className="flex flex-col gap-3 scroll-anim" style={{ "--from": "translateX(-50px)" }}>
             <h4 className="">طراحی اختصاصی و منحصربه‌فرد</h4>
             <div>
               هر فضا با توجه به سلیقه، نیاز و سبک زندگی شما به‌صورت کاملاً
@@ -25,7 +28,7 @@ const WhyChoosingUs = () => {
               <div>اطلاعات بیشتر</div>
             </Link>
           </div>
-          <div className="flex flex-col gap-3">
+          <div className="flex flex-col gap-3 scroll-anim" style={{ "--from": "translateX(-150px)" }}>
             <h4 className="">اجرای دقیق و باکیفیت</h4>
             <div>
               تمام مراحل اجرای دکوراسیون با دقت بالا، استفاده از متریال باکیفیت
@@ -39,7 +42,7 @@ const WhyChoosingUs = () => {
               <div>اطلاعات بیشتر</div>
             </Link>
           </div>
-          <div className="flex flex-col gap-3">
+          <div className="flex flex-col gap-3 scroll-anim" style={{ "--from": "translateX(-250px)" }}>
             <h4 className="">ترکیب خلاقیت و تجربه</h4>
             <div>
               با تکیه بر تجربه و ایده‌های خلاقانه، فضاهایی طراحی می‌کنیم که
