@@ -45,14 +45,16 @@ const Blog = () => {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col gap-5 lg:gap-3 mt-10 lg:mt-0">
+            <div className="flex flex-col gap-5 lg:gap-3 mt-10 lg:mt-0 scroll-anim" style={{ "--from": "scale(0.9)" }}>
               <h1 className="text-[var(--brand-primary)]">2026</h1>
               <h3>ترندها، ایده‌ها</h3>
               <div className="leading-7 text-lg text-[var(--text-secondary)]">
                 <div>و انتخاب‌هایی برای خلق فضایی هماهنگ و دلنشین</div>
                 <div>
-                جایی برای کشف نگاه‌های تازه به فضا، چیدمان و سبک زندگی معاصر.
-از انتخاب متریال و ترکیب رنگ‌ها تا نقش نور و جزئیاتی که می‌توانند فضایی ساده را به محیطی گرم، آرام و ماندگار تبدیل کنند؛
+                  جایی برای کشف نگاه‌های تازه به فضا، چیدمان و سبک زندگی معاصر.
+                  از انتخاب متریال و ترکیب رنگ‌ها تا نقش نور و جزئیاتی که
+                  می‌توانند فضایی ساده را به محیطی گرم، آرام و ماندگار تبدیل
+                  کنند؛
                 </div>
                 <div></div>
               </div>
@@ -73,7 +75,9 @@ const Blog = () => {
                 </div>
                 <div>
                   <div className="flex items-center gap-5">
-                    <div className="text-[var(--text-secondary)]">تماشای پروژه ها</div>
+                    <div className="text-[var(--text-secondary)]">
+                      تماشای پروژه ها
+                    </div>
                     <div className="bg-[var(--brand-glow)] p-3 rounded-full shadow-2xl cursor-pointer">
                       <RiPlayFill color="white" size={20} />
                     </div>

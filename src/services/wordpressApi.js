@@ -3,6 +3,7 @@ const API_URL = "https://farnooshstudio.ir/api/wp-json/wp/v2";  /* for online mo
 
 export async function getPosts() {
   const res = await fetch(`${API_URL}/posts?per_page=4&page=1&_embed`); //4 post akhar, page1 hamishe akharin post hast
+//   const res = await fetch(`${API_URL}/posts?_embed`); //all posts
 
   return res.json();
 }
