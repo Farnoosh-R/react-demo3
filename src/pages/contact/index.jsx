@@ -1,14 +1,5 @@
-import contact1 from "./assets/images/contact1.webp";
 import contact2 from "./assets/images/contact2.webp";
-import contact3 from "./assets/images/contact3.jpg";
-import contact4 from "./assets/images/contact4.webp";
 import contact5 from "./assets/images/contact5.webp";
-import contact6 from "./assets/images/contact6.webp";
-import contact7 from "./assets/images/contact7.webp";
-import contact8 from "./assets/images/contact8.webp";
-import contact9 from "./assets/images/contact9.jpg";
-import contact10 from "./assets/images/contact10.jpg";
-import contact12 from "./assets/images/contact12.webp";
 import contact13 from "./assets/images/contact13.webp";
 import Button from "../../components/ui/Button/Button";
 

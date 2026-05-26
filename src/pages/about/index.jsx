@@ -1,7 +1,5 @@
 import { ImOffice } from "react-icons/im";
 import Button from "../../components/ui/Button/Button";
-import about1 from "./assets/images/about1.png";
-import about2 from "./assets/images/about2.jpg";
 import about3 from "./assets/images/about3.webp";
 import about4 from "./assets/images/about4.png";
 import about5 from "./assets/images/about5.png";

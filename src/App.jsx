@@ -5,6 +5,8 @@ import Home from './pages/home';
 import Footer from './components/layout/footer';
 import About from './pages/about';
 import Contact from './pages/contact';
+import Blog from './pages/blog';
+import PostDetail from './pages/blog/PostDetail';
 
 export function useScrollAnimation() {
   const location = useLocation();
@@ -45,6 +47,8 @@ function App() {
         <Route path='/' element={<Home />}/>
         <Route path='/about' element={<About />}/>
         <Route path='/contact' element={<Contact />}/>
+        <Route path='/blog' element={<Blog />}/>
+        <Route path='/blog/:slug' element={<PostDetail />}/>
       </Routes>
       <Footer />
     </>

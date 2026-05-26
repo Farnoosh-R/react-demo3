@@ -8,10 +8,11 @@ const Button = ({ children, variant = "primary", to, type }) => {
     primary:
       "bg-[var(--brand-primary)] text-white shadow-lg shadow-orange-300/50",
 
-    secondary: "bg-gray-200 text-black",
+    secondary: "bg-[var(--brand-deep)] text-white shadow-lg shadow-2xl",
 
     pastel: "bg-gradient-to-r from-[#f09f49] to-[#e58411] text-lg text-white px-6 py-4 shadow-2xl",
-    accent: "bg-[var(--brand-accent)] text-white shadow-lg shadow-orange-300/50"
+    accent: "bg-[var(--brand-accent)] text-white shadow-lg shadow-orange-300/50",
+    glow: "bg-[var(--brand-glow)] text-white shadow-lg shadow-2xl",
   };
 
   const outlineVariants = {
